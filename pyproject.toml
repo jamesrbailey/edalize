@@ -32,8 +32,12 @@ Repository = "https://github.com/olofk/edalize"
 Issues = "https://github.com/olofk/edalize/issues"
 Changelog = "https://github.com/olofk/edalize/blob/main/NEWS"
 
+[tool.setuptools.package-data]
+edalize = ["tools/templates/**/*"]
+
 [tool.setuptools]
 script-files = ["scripts/el_docker"]
+include-package-data = true
 
 [tool.setuptools_scm]
 version_file = "edalize/version.py"
